@@ -8,7 +8,6 @@ import (
 	"strings"
 )
 func Part2(file *os.File) {
-  // ignore the function `day1_part1` and write a new function here
   digits := map[string]int{
     "one": 1,
     "two": 2,
