@@ -7,7 +7,14 @@ import (
 	"strconv"
 	"strings"
 )
-func Part2(file *os.File) {
+func Part2() {
+  fmt.Println("---------------")
+  fmt.Println("Day 1 - Part 2:")
+  file, err := os.Open("inputs/1/part1-prod.txt")
+  if err != nil {
+    fmt.Println("Error reading file")
+    os.Exit(1)
+  }
   digits := map[string]int{
     "one": 1,
     "two": 2,

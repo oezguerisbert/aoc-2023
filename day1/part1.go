@@ -7,7 +7,14 @@ import (
 	"strconv"
 )
 
-func Part1(file *os.File) {
+func Part1() {
+  fmt.Println("---------------")
+  fmt.Println("Day 1 - Part 1:")
+  file, err := os.Open("inputs/1/part1-prod.txt")
+  if err != nil {
+    fmt.Println("Error reading file")
+    os.Exit(1)
+  }
   fileScanner := bufio.NewScanner(file)
   sum := 0
   fileScanner.Split(bufio.ScanLines)
